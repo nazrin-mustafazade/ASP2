@@ -1,0 +1,23 @@
+﻿@model IEnumerable<ASP1.Entities.Fastfood>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FAST FOOD</title>
+</head>
+<body>
+    <h1>FAST FOOD</h1>
+    @foreach (var item in Model)
+    {
+        <div>
+            <h4>Name: @item.Name</h4>
+            <h4>Amount: @item.Amount</h4>
+        </div>
+        <hr />
+    }
+    <hr />
+    <hr />
+</body>
+
+
+</html>

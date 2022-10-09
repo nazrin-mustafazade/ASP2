@@ -1,0 +1,45 @@
+﻿@model ASP1.Models.IndexViewModel
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ALL PRODUCTS</title>
+</head>
+<body>
+    <h1>DRINKS</h1>
+    @foreach (var item in Model.DrinkList)
+    {
+        <div>
+            <h4>Name: @item.Name</h4>
+            <h4>Amount: @item.Amount</h4>
+        </div>
+        <hr />
+    }
+    <hr />
+    <hr />
+    <h1>HOT MEAL</h1>
+     @foreach (var item in Model.MealList)
+    {
+        <div>
+            <h4>Name: @item.Name</h4>
+            <h4>Amount: @item.Amount</h4>
+        </div>
+        <hr />
+    }
+    <hr />
+    <hr />
+    <h1>FAST FOOD</h1>
+    @foreach (var item in Model.FoodList)
+    {
+        <div>
+            <h4>Name: @item.Name</h4>
+            <h4>Amount: @item.Amount</h4>
+        </div>
+        <hr />
+    }
+    <hr />
+    <hr />
+</body>
+
+
+</html>

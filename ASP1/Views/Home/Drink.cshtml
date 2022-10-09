@@ -1,0 +1,22 @@
+﻿@model IEnumerable<ASP1.Entities.Drink>
+
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>DRINKS</title>
+        </head>
+        <body>
+            <h1>DRINKS</h1>
+            @foreach (var item in Model){
+                <div>
+                    <h4>Name: @item.Name</h4>
+                    <h4>Amount: @item.Amount</h4>
+                </div>
+                <hr />
+            }
+    <hr />
+    <hr />
+        </body>
+        
+
+    </html>
